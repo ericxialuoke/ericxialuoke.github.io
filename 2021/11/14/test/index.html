@@ -24,7 +24,7 @@
 
   
 
-  <title>Hello World | 夏洛克</title>
+  <title>时间片轮转问题的解决 | 夏洛克</title>
 
   
 
@@ -98,16 +98,22 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">Hello World</h1>
+          <h1 class="title-wrap">时间片轮转问题的解决</h1>
           <h2 class="title-sub-wrap">
             <strong>Eric</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-11-14T02:46:10.221Z" itemprop="datePublished">2021-11-14</time>
+            <time  class="article-date" datetime="2021-11-14T05:26:37.514Z" itemprop="datePublished">2021-11-14</time>
           </h2>
           <ul class="wrap-list dark">
   
+    <li><a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">📒 操作系统</a></li>
+  
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E6%97%B6%E9%97%B4%E7%89%87/">🏷️ 时间片</a></li>
+  
+    <li><a href="/tags/%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95/">🏷️ 调度算法</a></li>
   
 </ul>
         </div>
@@ -131,19 +137,14 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">**<span class="number">0</span>  <span class="number">1</span>  <span class="number">2</span>  <span class="number">3</span>  <span class="number">4</span>  <span class="number">5</span>  <span class="number">6</span>  <span class="number">7</span>  <span class="number">8</span>  <span class="number">9</span>  <span class="number">10</span>  <span class="number">11</span>  <span class="number">12</span>  <span class="number">13</span>  <span class="number">14</span> <span class="number">15</span>  <span class="number">16</span>  <span class="number">17</span>  <span class="number">18</span>  <span class="number">19</span>  <span class="number">20</span>**</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>  <span class="number">2</span>  <span class="number">1</span>  <span class="number">3</span>  <span class="number">4</span>  <span class="number">1</span>  <span class="number">5</span>  <span class="number">3</span>  <span class="number">1</span>  <span class="number">5</span>   <span class="number">1</span>    <span class="number">5</span>    <span class="number">1</span>     <span class="number">5</span>    <span class="number">1</span>   <span class="number">5</span>    <span class="number">1</span>    <span class="number">1</span>     <span class="number">1</span>    **<span class="number">1</span>**</span><br><span class="line"></span><br><span class="line">​    <span class="number">1</span>  <span class="number">3</span>  <span class="number">4</span>  <span class="number">1</span>  <span class="number">5</span>  <span class="number">3</span>  <span class="number">1</span>  <span class="number">5</span>   <span class="number">1</span>  <span class="number">5</span>  <span class="number">1</span>  <span class="number">5</span>  <span class="number">1</span>  <span class="number">5</span>  <span class="number">1</span></span><br><span class="line"></span><br><span class="line">​            <span class="number">1</span>  <span class="number">5</span>  <span class="number">3</span>  <span class="number">1</span>  <span class="number">5</span>                                                 **<span class="number">5</span>**</span><br><span class="line"></span><br><span class="line">​         **<span class="number">2</span>**     <span class="number">3</span>              **<span class="number">3</span>**</span><br><span class="line"></span><br><span class="line">​                      **<span class="number">4</span>**</span><br><span class="line"></span><br><span class="line">​                        </span><br><span class="line"></span><br><span class="line"><span class="number">1</span>:<span class="number">19</span>   <span class="number">1.9</span> </span><br><span class="line"></span><br><span class="line"><span class="number">2</span>:<span class="number">2</span>    <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="number">3</span>:<span class="number">8</span>     <span class="number">4</span></span><br><span class="line"></span><br><span class="line"><span class="number">4</span>:<span class="number">5</span>     <span class="number">6</span></span><br><span class="line"></span><br><span class="line"><span class="number">5</span>:<span class="number">16</span>    <span class="number">2.8</span></span><br><span class="line"></span><br><span class="line">平均周转时间：</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <figure class="figure-image">
+      <img src="https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg" alt="带描述带图片" loading="lazy" />
+      <figcaption>带描述带图片</figcaption>
+    </figure>
+  
 
       </section>
 
@@ -154,12 +155,12 @@
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="D:\Repository\GitRepository\blog\myblog\public\68686407_p0.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2021/11/14/test/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">时间片轮转问题的解决</h2>
+        <a href="/2021/11/15/%E6%94%BF%E6%B2%BB/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">政治第一部分</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -167,6 +168,20 @@
   </article>
 </div>
           
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2021/11/14/hello-world/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">Hello World</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
           
         </nav>
       
